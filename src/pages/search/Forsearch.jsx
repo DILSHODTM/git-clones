@@ -14,7 +14,8 @@ const forsearch = () => {
     const {title} = useParams()
     const [data,setData] = useState([])
     useEffect(() => {
-        instance.get(`/products?title=${title}`).then((res)=>{
+        instance.get(`/products/?title=${title}`)
+            .then((res)=>{
             setData(res.data)
         })
     }, [])
