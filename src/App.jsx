@@ -11,7 +11,7 @@ import Buy from './UI/buy';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/create';
 import Success from './pages/Auth/success';
-import Searches from './pages/search/forsearch';
+import Searches from './pages/search/Forsearch.jsx';
 
 const App = () => {
   return (
