@@ -16,13 +16,23 @@ const Login = () => {
   const [userLogin, setUserLogin] = useState({});
   const loginUser = (e) => {
     e.preventDefault();
+    
     instance
       .post("/auth/login", userLogin)
       .then((response) => {
         if (response.data.access_token) {
           localStorage.setItem("token", response.data.access_token),
             dispatch({ email: response.data.email, type: "LOGIN_USER" });
-          Navigate("/");
+         Navigate("/");
+   setTimeout(() => {
+         window.location.reload();   
+            
+        }, 500);
+    
+    
+   
+  }
+          
         }
       })
       .catch((err) => console.log(err));
