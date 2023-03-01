@@ -1,0 +1,22 @@
+.car{
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+    transition: all .2s ease-in-out;
+    &:hover{
+        transform: translateY(-12px);
+    }
+
+   img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        
+    }
+}
+.wraps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}

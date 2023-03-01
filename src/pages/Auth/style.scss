@@ -1,0 +1,44 @@
+.sassa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: #fff;
+}
+
+.margins{
+    // margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.fs-14{
+    font-size: 14px;
+}
+
+.line{
+    border-bottom: 1px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+.mens{
+    margin-top: 35%;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+}
+.refister-button{
+    margin-top: 35%;
+    margin-left: 50px;
+ 
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+

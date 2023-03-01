@@ -1,0 +1,27 @@
+
+.cars{
+   width: 280px;
+    height: 360px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    &:hover{
+        transform: translateY(-12px);
+        
+        
+    }
+}
+
+
+.cars img{
+    
+    // margin-left: -12px;
+    width: 279px;
+    height: 50%;
+    object-fit: cover;
+}
+
+.mrs{
+    margin-left: -12px;
+}
