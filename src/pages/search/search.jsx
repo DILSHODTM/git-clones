@@ -28,16 +28,9 @@ const search = () => {
 
 //         };
 
-
-
-
-
-
-
-
   return (
     <>
-      <form  onSubmit={searchRender} >
+      <form   >
         <input
           type="text"
           className="form-controls border border-dark border-end-0" onChange={inputValueRender}
