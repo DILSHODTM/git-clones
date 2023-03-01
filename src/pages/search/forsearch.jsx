@@ -55,7 +55,7 @@ const forsearch = () => {
             {
                 data.map((item)=>{
                     return(
-                        <div className="row">
+                        <div className="row" key={item.id}>
                             <div className="col-4 my-2">
                                 <img src={item.images[0]} alt="" className='search-img' />
                             </div>
