@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { instance } from "../../assets/Api/instance";
+import { Link } from "react-router-dom";
 
 const search = () => {
   const [categorie, setCategories] = useState([]);
@@ -20,12 +21,12 @@ const search = () => {
 
     };
 
- const searchRender = (e) => {
-    e.preventDefault();
+//  const searchRender = (e) => {
+//     e.preventDefault();
   
-        window.location.href=`/search/${search}`
+//         window.location.href=`/search/${search}`
 
-        };
+//         };
 
 
 
@@ -54,7 +55,11 @@ const search = () => {
             );
           })}
         </select>
-        <button className="btn btn-primary btns btn-search">Search</button>
+
+          <Link to={`/search/${search}`}
+          > <button className="btn btn-primary btns btn-search">Search</button>
+          </Link>
+//         <button className="btn btn-primary btns btn-search">Search</button>
       </form>
     </>
   );
